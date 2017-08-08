@@ -14,3 +14,5 @@ $( "#cat" ).click(function() {
   $('.counter').html(clicks);
 
 });
+//Known Bugs
+//Clicking to the side of the cat also increments the counter.
