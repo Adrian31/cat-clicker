@@ -1,29 +1,58 @@
-body  {
-  background-color: #000;
-  font-family: Helvetica Neue;
-  font-size: 50px;
-  color: #fff;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
 }
 
 #container{
-  width: 80%;
-  margin: auto;
+  margin: 10%;
 }
 
-#cat {
+#cat-container{
+  width: 100%;
+}
+
+#cats{
+  list-style-type: none;
+  padding: 0;
   width: 100%;
   opacity:1;
-  display: block;
+  display: inline;
 }
 
-img{
-  width: 45%;
-  margin-left: 5px;
+.cat-names{
+  vertical-align: top;
+  position: absolute;
+  padding: 1%;
+  color: white;
+  background-color: black;
+  font-size: 200%;
+  z-index: 1;
+  margin: 1px;
 }
 
-#cat:hover{
-  margin:none;
-  cursor: pointer;
+.cat-list-style{
+  width: 100%;
+  display: inline;
 }
 
 .header{
@@ -32,6 +61,23 @@ img{
 }
 
 .counter{
-  position: fixed;
   display: block;
+}
+
+img{
+  width: 50%;
+}
+
+img:hover{
+  margin:none;
+  cursor: pointer;
+}
+.cat-names:hover{
+  margin:none;
+  cursor: pointer;
+}
+
+.counter{
+  font-size: 200%;
+  width: 11%;
 }

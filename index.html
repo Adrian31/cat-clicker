@@ -2,20 +2,34 @@
 <html lang="en">
 <html>
   <head>
+
     <meta charset="UTF-8">
     <title>Cat Clicker</title>
     <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body>
-    <div id="container">
-      <div id="cat">
-        <p class="counter">Click the cat</p>
+    <ul id="cat-select"></ul>
+
+    <div id="container" class="unselectable">
+      <div id="cat-container">
+        <ul id="cats">
+
+        </ul>
       </div>
+      <p class="counter">Click the cat</p>
     </div>
 
-    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/libs/jquery.js"></script>
     <script src="js/script.js"></script>
+
   </body>
 
 </html>
+<!--<div id="cat">
+  <h2 id="cat-name"></h2>
+  <div id="cat-count"></div>
+  <img id="cat-img" src="" alt="cute cat">
+</div>
+-->
